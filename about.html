@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	
+
+	.panel-body{
+	background-color: maroon;
+	box-shadow:  #ffb3b3 5px 5px 5px;
+	}
+		.panel-body#panel1{
+				background-color: #990000;
+		}
+
+.bg-img {
+  /* The image used */
+  background-image: url("images/4.jpg");
+
+  /* Control the height of the image */
+  min-height: 200px;
+
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+	.footer {
+  	  position: absolute;
+	  left: 0;
+	  bottom: -100;
+	  width: 100%;
+	  background-color:black;
+	  color: white;
+	  text-align: center;
+	}
+</style>
+	<title>Course Search</title>
+
+<!-- bootstrap -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- icons -->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+<!-- End of bootsrap -->
+
+
+</head>
+
+<div class="row">
+	<!--<div class="col-md-offset-1"> -->
+
+
+
+	                    <!-- navigation bar -->
+	<nav class="navbar navbar-default navbar-fixed-top " name="nav1">
+		<div class="container-fluid">
+				<!-- logo -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#mainNavBar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">Brindex</a>
+				</div>
+				<!-- Menu items -->
+				<div class="nav navbar-expand-md collapse navbar-collapse" id="mainNavBar">
+						<ul class="nav navbar-nav">
+								<li ><a href="index.php"><font color="maroon" >Home</font></a></li>
+								<li class="active"><a href="#"><font color="maroon" >About</font></a></li>	
+							
+						</ul>
+						<!-- Right align-->
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#" data-toggle="modal" data-toggle="tooltip" title="To recieve course alerts on Mail" data-target="#signupwindow" ><div class="btn btn-sm btn-warning"><font color="white" >Sign Up</font></div></a></li>
+						</ul>
+						
+				</div>
+		</div>
+	</nav>
+	<!-- end of navigation bar -->
+<body>
+ <!-- Pop up window for login -->
+<div class="modal fade" id="loginwindow">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<!-- header -->
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" >&times;</button>
+					<h4 class="modal-title"><center>Login</center> </h4>
+				</div>
+			<!-- body -->
+				<div class="modal-body">
+					<form role="form" action="user_login.php" method="POST">
+						<div class="form-group">
+							<input type ="email" class="form-control" placeholder="Email" name="login_email" required="yes" >
+						</div>
+						<div class="form-group">
+							<input type ="password" class="form-control" placeholder="Password" name="login_pass" required="yes" >
+						</div>
+					
+				</div>
+			<!-- footer -->
+				<div class="modal-footer">
+					<input type="submit" class="btn btn-primary btn-block" name="user_login">
+				</div>
+				</form>
+		</div>
+	</div>
+</div>
+<!-- end of Pop up window -->
+ <!-- Pop up window for sign up -->
+<div class="modal fade" id="signupwindow">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<!-- header -->
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" >&times;</button>
+					<h4 class="modal-title"><center>Sign Up</center> </h4>
+				</div>
+			<!-- body -->
+				<div class="modal-body">
+				<h4 class="bg-warning"><center>Sign Up to Receive course alerts on Mail</center> </h4>
+					<form role="form" action="sign_up.php" method="POST">
+						<div class="form-group">
+							<input type ="text" class="form-control" placeholder="Username" name="username" required="yes" >
+						</div>
+						<div class="form-group">
+							<input type ="email" class="form-control" placeholder="Email" name="reg_email" required="yes">
+						</div>
+						<div class="form-group">
+							<input type ="password" class="form-control" placeholder="Password" name="reg_pass" required="yes">
+						</div>
+						<div class="form-group">
+							<input type ="password" class="form-control" placeholder="Confirm Password" name="conf_pass" required="yes">
+						</div>
+					
+				</div>
+			<!-- footer -->
+				<div class="modal-footer">
+					<input type="submit" class="btn btn-primary btn-block" name="register" >
+				</div>
+				</form>
+
+		</div>
+	</div>
+</div>
+<!-- end of Pop up window -->
+
+ <br>
+ <br>
+	<br>
+
+	<div class= "row">
+	<div class="bg-img">
+<div class="container">
+			<center>
+		<font color="maroon" >
+			<h1 ><b>Brindex consultancy.</b></h1>
+			<h3 ><b>Info@brindex.co.ke.</b></h3>
+			<h4 ><b>www.brindex.co.ke.</b></h4>
+			<h5 ><b>kipeter95@gmail.com</b></h5>
+			<h6 ><b>0729349224</b></h6>
+			</font>
+			<br>
+		</center>
+</div>
+</div>
+</div>
+<br>
+<div class="container">	
+ <div class="well well-sm">
+<p>Brindex.co.ke is an online marketing website that leverage on the progressive growth in the higher learning institution to facilitate the uptake of course in the institution. Brindex.co.ke is an online mall of higher learning institution. The process of selecting a more affordable course, from an institution of the students choice, for the optimal duration preferred by the student in question. The exam body that is examining each and every course will be cleary indicated on the search results.Marketing on the website will enable the firms to enjoy fairness in marketing. The cost of marketing will considerably reduced since the firms will be advertised collectively.
+<p>The diagrams below indicate the process through which the student is expected to undertake to get the course of his choice. The first filter the student is expected to pick is the faculty of choice,The second filter the student is expected to select the category; i.e level of study,The third filter the student is expected to select the time he/she expects to enroll and The last filter is on preferred locationon which the student prefers to study.</p>
+
+ <p>Institutions of higher learning enrollment on this platform will expose their courses to more students all over the country at any particular time. Brindex also intends to introduce brindex magazine,  this will enable market the institutions to persons unpopular with the internet.</p>
+ <p> Brindex.co.ke aims to help facilitate and enhance growth in institution of higher learning.</p>
+
+ </div>
+ 	<br>
+ 	<br>
+ 	<br>
+ 	<br>
+ 	<br>
+ 	<br>
+ 	<br>
+ 	<br>
+ 	<br>
+
+</div>
+
+<div class="footer">
+<div class=row>
+<br>
+<div class="col-md-offset-2">
+
+	<div class="col-md-10">
+	<center>
+		<div class="col-md-2">
+			<div class="my content-left">
+				<a href="about.html"><font color="white">About us</font></a>
+			</div>
+			
+		</div>
+	</center>
+	<center>
+		<div class="col-md-2">
+			<a href="facebook.com" data-toggle="tooltip" title="Like our page on facebook"><img src="images/facebook.png" width="40" height="40" class="img-rounded"></a>
+		</div>
+	</center>
+	<center>
+		<div class="col-md-2">
+			<a href="twitter.com" data-toggle="tooltip" title="Follow us on twitter"><img src="images/twitter.png" width="40" height="40" class="img-circle"></a>
+		</div>
+	</center>
+	<center>
+		<div class="col-md-2">
+			<a href="mailto:bnkimtai@gmail.com" data-toggle="tooltip" title="Send us a mail"><img src="images/google.png" width="40" height="40" class="img-circle"></a>
+		</div>
+	</center>
+	<center>
+		<div class="col-md-2">
+			<a href="instagram.com" data-toggle="tooltip" title="Follow us on instagram"><img src="images/insta2.jpeg" width="40" height="40" class="img-circle"></a>
+		</div>
+	</center>
+
+		
+		
+	</div>
+
+</div>
+</div>
+<div class="container">
+	<hr>
+</div>
+
+ <div>
+		                 <center>
+		                 	<b>©</b>
+		                    <script>
+		                        document.write(new Date().getFullYear());
+		                    </script>.All rights Reserved
+		                    <p> Designed by SmartPro Systems 0707357072</p>
+
+		                 </center>
+		                </div>
+
+</div>
+
+</html>
+
+
+
